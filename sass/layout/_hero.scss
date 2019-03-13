@@ -1,0 +1,21 @@
+.hero{
+    height: 75vh;
+    width: 100%;
+    background: $color-purple;
+    position: relative;
+
+    &__text{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+
+        p{
+            width: 50%;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+            line-height: 1.5;
+        } 
+    
+    }
+}

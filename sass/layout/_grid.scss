@@ -1,0 +1,96 @@
+.row{ // normal layout
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+
+        @include respond(tab-port){
+            margin-bottom: 0;
+        }
+    }
+
+    @include respond(tab-port){
+        max-width: 70rem;
+        padding: 0 3rem;
+    }
+
+    @include clearfix;
+
+    [class^="col-"]{ // All class start with "col-"
+        float: left;
+
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+
+            @include respond(tab-port){
+                margin-right: 0;
+            }
+        }
+
+        @include respond(tab-port){
+            width: 100% !important;
+        }
+    }
+}
+
+.box-container{
+    max-width: $grid-width;
+    margin: 0 auto;
+}
+
+.row-fluid{ // whole wide layout
+    max-width: 100%;
+    margin: 0 auto;
+
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+    [class^="col-no-"]{ // All class start with "col-no-" for 
+        float: left;
+
+        @include respond(tab-port){
+            width: 100% !important;
+        }
+    }
+}
+
+.col-1-of-2{
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+}
+
+.col-1-of-3{
+    width: calc((100% - #{$gutter-horizontal} * 2) / 3);
+}
+
+.col-2-of-3{
+    width: calc(( (100% - #{$gutter-horizontal} * 2 ) / 3) * 2 + #{$gutter-horizontal} );
+}
+
+.col-1-of-4{
+    width: calc((100% - #{$gutter-horizontal} * 3) / 4);
+}
+
+.col-2-of-4{
+    width: calc(( (100% - #{$gutter-horizontal} * 3) / 4 ) * 2 + #{$gutter-horizontal});
+}
+
+.col-3-of-4{
+    width: calc(( (100% - #{$gutter-horizontal} * 3) / 4) * 3 + #{$gutter-horizontal} * 2);
+}
+
+// This grid is made for layout without gutter
+.col-no-1-of-2{
+    width: calc(100% / 2);
+    overflow: hidden;
+}
+
+.col-no-1-of-3{
+    width: calc(100% / 3);
+    overflow: hidden;
+}
+
+

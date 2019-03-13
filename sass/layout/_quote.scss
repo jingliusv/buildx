@@ -1,0 +1,25 @@
+.quote{
+    background: $color-yellow;
+    height: 10vh;
+    width: 100%;
+
+    .box-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: inherit;
+
+        p{
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+
+            a{
+                text-decoration: none;
+                color: $color-dark;
+                border-bottom: 1px solid $color-dark;
+                font-style: italic;
+            }
+        }
+    }
+}

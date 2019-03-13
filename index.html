@@ -12,28 +12,34 @@
 <body>
     <header>
         <div class="header__contact">
-            <p>Have any questions?</p>
-            <div class="header__contact--email">
-                <i class="far fa-envelope"></i>
-                <p>contact@mail.com</p>
-            </div>
-            <div class="header__contact--phone">
-                <i class="fas fa-phone-volume"></i>
-                <p>+46 8888 000</p>
+            <div class="box-container">
+                <p>Have any questions?</p>
+                <div class="header__contact--info">
+                    <div class="header__contact--email">
+                        <i class="far fa-envelope"></i>
+                        <p>contact@mail.com</p>
+                    </div>
+                    <div class="header__contact--phone">
+                        <i class="fas fa-phone-volume"></i>
+                        <p>+46 8888 000</p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="header__nav">
-            <a href="/"><img src="img/logo.png" alt="Buildx logo"></a>
+            <div class="box-container">
+                <a href="/"><img src="img/logo.png" alt="Buildx logo"></a>
 
-            <nav>
-                <a href="#">About</a>
-                <a href="#">Features</a>
-                <a href="#">Project</a>
-                <a href="#">Pages</a>
-                <a href="#">Contact</a>
-                <i class="fas fa-search"></i>
-            </nav>
+                <nav>
+                    <a href="#">About</a>
+                    <a href="#">Features</a>
+                    <a href="#">Project</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                    <i class="fas fa-search"></i>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -41,15 +47,22 @@
                  HERO
         ======================= -->
     <section class="hero">
-        <h1>We do big things with big ideas</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit laudantium! Necessitatibus accusamus saepe animi, facilis temporibus repellat unde possimus.</p>
-        <a href="#" class="btn">Explore More</a>
-
-        <div class="hero__quote">
-            <P>Consulting And Estimate For Your Project, <a href="#">Conatct Us Today</a></P>
-            <a href="#" class="btn">Get a Quote</a>
+        <div class="box-container">
+            <div class="hero__text">
+                <h1>We do big things with big ideas</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, odit laudantium! Necessitatibus accusamus saepe animi, facilis temporibus repellat unde possimus.</p>
+                <a href="#" class="btn">Explore More</a>
+            </div>
         </div>
     </section>
+
+    <div class="quote">
+        <div class="box-container">
+            <P>Consulting And Estimate For Your Project, <a href="#"> Conatct Us Today</a></P>
+            
+            <a href="#" class="btn btn--small btn--white">Get a Quote</a>              
+        </div>
+    </div>
 
 
     <!-- ======================
@@ -57,71 +70,85 @@
         ======================= -->
     <section class="services">
         <h2>Our Services</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quam sequi perspiciatis, officiis inventore, ad nulla voluptates delectus consequuntur vel soluta illo quos nostrum vitae deleniti commodi doloremque maxime cupiditate.</p>
+        <p class="sub-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quam sequi perspiciatis, officiis inventore, ad nulla voluptates delectus consequuntur vel soluta illo quos nostrum vitae deleniti commodi doloremque maxime cupiditate.</p>
 
         <div class="services__box">
             <div class="row">
                 <div class="col-1-of-3">
-                    <img src="" alt="">
+                    <div class="services__box--img">
+                        <img src="" alt="">
+                    </div>
                     <h3>Renovations</h3>
-                    <p>Lorem ipsum dolor sit maiores amet consectetur, adipisicing elit. Fuga ipsa maxime, sit autem dolorum eum sunt culpa beatae tempore at sapiente neque ab eos maiores!</p>
-                    <a href="#">Read More</a>
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi dolorum mollitia voluptatibus repellendus rerum, debitis officiis unde veritatis cumque.</p>
+                    <a href="#" class="link">Read More</a>
                 </div>
 
                 <div class="col-1-of-3">
-                    <img src="" alt="">
+                    <div class="services__box--img">
+                        <img src="" alt="">
+                    </div>
                     <h3>Consulting</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis hic, harum, sapiente amet deleniti earum impedit quos totam aperiam molestias eum ab pariatur quas? Itaque facere consectetur aliquam excepturi!</p>
-                    <a href="#">Read More</a>
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iste inventore fugit totam aperiam ea, consequatur accusamus debitis nobis officiis.</p>
+                    <a href="#" class="link">Read More</a>
                 </div>
 
                 <div class="col-1-of-3">
-                    <img src="" alt="">
+                    <div class="services__box--img">
+                        <img src="" alt="">
+                    </div>
                     <h3>Smart Houses</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ut obcaecati reiciendis cumque dolores quibusdam laboriosam placeat quod sunt voluptatem cupiditate, maiores doloremque voluptate harum nesciunt, magni repellat.</p>
-                    <a href="#">Read More</a>
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus culpa eveniet at facere reprehenderit itaque nobis sunt iste optio praesentium.</p>
+                    <a href="#" class="link">Read More</a>
                 </div>
             </div>
         </div>
 
         <div class="services__block">
-            <div class="services__block--video">
-
-            </div>
-
-            <div class="services__block--info">
-                <div class="infoBox">
-                    <div class="infoBox__icon">
-
-                    </div>
-
-                    <div class="infoBox__content">
-                        <h3>General Builder</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error ipsam inventore enim velit aliquid. Blanditiis dolor eum deleniti laborum placeat quaerat excepturi voluptates. Sit.</p>
+            <div class="row-fluid">
+                <div class="col-no-1-of-2">
+                    <div class="services__block--video">
+    
                     </div>
                 </div>
-
-                <div class="infoBox">
-                    <div class="infoBox__icon">
-
+    
+                <div class="col-no-1-of-2">
+                    <div class="services__block--info">
+                        <div class="box">
+                            <div class="infoBox">
+                                <div class="infoBox__icon">
+                                    <img src="img/city-icon.svg" alt="city-icon">
+                                </div>
+            
+                                <div class="infoBox__content">
+                                    <h3>General Builder</h3>
+                                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error ipsam inventore enim velit aliquid. Blanditiis dolor eum deleniti laborum placeat quaerat excepturi voluptates. Sit.</p>
+                                </div>
+                            </div>
+            
+                            <div class="infoBox">
+                                <div class="infoBox__icon">
+                                    <img src="img/house-icon.svg" alt="house-icon">
+                                </div>
+            
+                                <div class="infoBox__content">
+                                    <h3>House Extensions</h3>
+                                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error ipsam inventore enim velit aliquid. Blanditiis dolor eum deleniti laborum placeat quaerat excepturi voluptates. Sit.</p>
+                                </div>
+                            </div>
+            
+                            <div class="infoBox">
+                                <div class="infoBox__icon">
+                                    <img src="img/fix-icon.svg" alt="fix-icon">
+                                </div>
+            
+                                <div class="infoBox__content">
+                                    <h3>Refurbishment</h3>
+                                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error ipsam inventore enim velit aliquid. Blanditiis dolor eum deleniti laborum placeat quaerat excepturi voluptates. Sit.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="infoBox__content">
-                        <h3>House Extensions</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error ipsam inventore enim velit aliquid. Blanditiis dolor eum deleniti laborum placeat quaerat excepturi voluptates. Sit.</p>
-                    </div>
-                </div>
-
-                <div class="infoBox">
-                    <div class="infoBox__icon">
-
-                    </div>
-
-                    <div class="infoBox__content">
-                        <h3>Refurbishment</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error ipsam inventore enim velit aliquid. Blanditiis dolor eum deleniti laborum placeat quaerat excepturi voluptates. Sit.</p>
-                    </div>
-                </div>
+                </div>    
             </div>
         </div>
     </section>
@@ -132,10 +159,10 @@
         ======================= --> 
     <section class="featured-works">
         <h2>Featured Works</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam culpa adipisci sapiente labore facilis dolore. Assumenda aperiam itaque delectus modi voluptas inventore at, non sequi rem! Minus ducimus mollitia ea.</p>
+        <p class="sub-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam culpa adipisci sapiente labore facilis dolore. Assumenda aperiam itaque delectus modi voluptas inventore at, non sequi rem! Minus ducimus mollitia ea.</p>
 
         <div class="feature">
-            <div class="feature__tab">
+            <div class="feature__tabs">
                 <a href="#">All</a>
                 <a href="#">Green Building</a>
                 <a href="#">Healthcare</a>
@@ -145,26 +172,50 @@
 
             <div class="feature__container">
                 <div class="row-fluid">
-                    <div class="col-1-of-3">
+                    <div class="col-no-1-of-3">
                         <div class="feature__box">
                             <div class="feature__box--content">
-                                <h4>Architexture and Design</h4>
+                                <h4>Architecture and Design</h4>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-1-of-3">
+                    <div class="col-no-1-of-3">
                         <div class="feature__box">
                             <div class="feature__box--content">
-                                <h4>Architexture and Design</h4>
+                                <h4>Architecture and Design</h4>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-1-of-3">
+                    <div class="col-no-1-of-3">
                         <div class="feature__box">
                             <div class="feature__box--content">
-                                <h4>Architexture and Design</h4>
+                                <h4>Architecture and Design</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-no-1-of-3">
+                        <div class="feature__box">
+                            <div class="feature__box--content">
+                                <h4>Architecture and Design</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-no-1-of-3">
+                        <div class="feature__box">
+                            <div class="feature__box--content">
+                                <h4>Architecture and Design</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-no-1-of-3">
+                        <div class="feature__box">
+                            <div class="feature__box--content">
+                                <h4>Architecture and Design</h4>
                             </div>
                         </div>
                     </div>
@@ -178,15 +229,17 @@
          ======================= -->
     <section class="feedback">
         <h2>Customer Feedback</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perferendis similique, deserunt voluptatibus porro eligendi eveniet. Alias debitis soluta, nam eligendi magni expedita est necessitatibus quasi nulla sint accusamus earum laboriosam ex atque architecto voluptatibus.</p>
+        <p class="sub-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perferendis similique, deserunt voluptatibus porro eligendi eveniet. Alias debitis soluta, nam eligendi magni expedita est necessitatibus quasi nulla sint accusamus earum laboriosam ex atque architecto voluptatibus.</p>
 
         <div class="feedback-content">
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="feedback-box">
-                        <img src="" alt="">
+                        <div class="feedback-box__img">
+                            <img src="" alt="">
+                        </div>
 
-                        <div class="feedback-box--content">
+                        <div class="feedback-box__content">
                             <p>I've been happy with the services provided by Construction LLC. Scooter Libby has been wonderful! He has returned my calls quickly, and he answered all my questions.</p>
                             <span>Housebuilders - CEO</span>
                         </div>
@@ -195,9 +248,11 @@
 
                 <div class="col-1-of-2">
                     <div class="feedback-box">
-                        <img src="" alt="">
+                        <div class="feedback-box__img">
+                            <img src="" alt="">
+                        </div>
 
-                        <div class="feedback-box--content">
+                        <div class="feedback-box__content">
                             <p>I've been happy with the services provided by Construction LLC. Scooter Libby has been wonderful! He has returned my calls quickly, and he answered all my questions.</p>
                             <span>Housebuilders - CEO</span>
                         </div>
@@ -205,37 +260,55 @@
                 </div>
             </div>
 
-            <div class="feedback__company">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="feedback__company">                
+                <div class="row">
+                    <img src="img/logo-1.png" alt="logo-1">
+                    <img src="img/logo-2.png" alt="logo-2">
+                    <img src="img/logo-3.png" alt="logo-3">
+                    <img src="img/logo-4.png" alt="logo-4">
+                </div>                
             </div>
 
             <div class="feedback__num">
-                <div class="box">
-                    <p>Projects</p>
-                    <span>256</span>
-                </div>
-
-                <div class="box">
-                    <p>Clients</p>
-                    <span>158</span>
-                </div>
-
-                <div class="box">
-                    <p>Credits</p>
-                    <span>68</span>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="box">
+                            <p>Projects</p>
+                            <span>256</span>
+                        </div>
+                    </div>
+    
+                    <div class="col-1-of-3">
+                        <div class="box">
+                            <p>Clients</p>
+                            <span>158</span>
+                        </div>
+                    </div>
+    
+                    <div class="col-1-of-3">
+                        <div class="box">
+                            <p>Credits</p>
+                            <span>68</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="feedback__msg">
-                <div class="feedback__msg--content">
-                    <p>Embedded in our culture of hard work, honesty, and getting the well done job</p>
-                    <span>It can be used on larger scale projects as well as small scale projects without any problems.</span>
+            <div class="feedback-msg">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="feedback-msg__content">
+                            <p>Embedded in our culture of hard work, honesty, and getting the well done job</p>
+                            <span>It can be used on larger scale projects as well as small scale projects without any problems.</span>
+                        </div>
+                    </div>
+    
+                    <div class="col-1-of-2">
+                        <div class="feedback-msg__btn">
+                            <a href="#" class="btn btn--small">Contact Us Today!</a>
+                        </div>
+                    </div>
                 </div>
-
-                <a href="#" class="btn">Contact Us Today!</a>
             </div>
         </div>
     </section>
@@ -246,73 +319,103 @@
     
     <section class="news">
         <h2>Our Featured News</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, accusamus earum odio veritatis error dicta cupiditate tempore nulla in corporis id consequatur quod neque obcaecati. Labore qui inventore quam similique!</p>
+        <p class="sub-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, accusamus earum odio veritatis error dicta cupiditate tempore nulla in corporis id consequatur quod neque obcaecati. Labore qui inventore quam similique!</p>
 
         <div class="row">
             <div class="col-1-of-3">
-                <img src="" alt="">
-
-                <h3>Construction Forklift Buyers Guide</h3>
-                <i class="far fa-calendar-alt"></i><span>28 December 2018</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, in! Autem porro iure esse vel ratione laboriosam impedit corporis excepturi.</p>
+                <div class="news-box">
+                    <div class="news-box__img">
+                        <img src="" alt="">
+                    </div>
+    
+                    <h3>Construction Forklift Buyers Guide</h3>
+                    <i class="far fa-calendar-alt"></i><span>28 December 2018</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, in! Autem porro iure esse vel ratione laboriosam impedit corporis excepturi.</p>
+                    <a href="#" class="link">Read More</a>
+                </div>
             </div>
 
             <div class="col-1-of-3">
-                <img src="" alt="">
+                <div class="news-box">
+                    <div class="news-box__img">
+                        <img src="" alt="">
+                    </div>
+    
+                    <h3>How to plan for your dream house?</h3>
+                    <i class="far fa-calendar-alt"></i><span>20 November 2018</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, in! Autem porro iure esse vel ratione laboriosam impedit corporis excepturi.</p>
 
-                <h3>How to plan for your dream house?</h3>
-                <i class="far fa-calendar-alt"></i><span>20 November 2018</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, in! Autem porro iure esse vel ratione laboriosam impedit corporis excepturi.</p>
+                    <a href="#" class="link">Read More</a>
+                </div>
             </div>
 
             <div class="col-1-of-3">
-                <img src="" alt="">
-
-                <h3>Builder of human hapiness for all time</h3>
-                <i class="far fa-calendar-alt"></i><span>28 December 2018</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, in! Autem porro iure esse vel ratione laboriosam impedit corporis excepturi.</p>
+                <div class="news-box">
+                    <div class="news-box__img">
+                        <img src="" alt="">
+                    </div>
+    
+                    <h3>Builder of human hapiness for all time</h3>
+                    <i class="far fa-calendar-alt"></i><span>28 October 2018</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, in! Autem porro iure esse vel ratione laboriosam impedit corporis excepturi.</p>
+                    <a href="#" class="link">Read More</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer__contact">
-            <p>Contact Info</p>
-
-            <i class="far fa-envelope"></i>
-            <span>hello@contact.com</span>
-
-            <i class="fal fa-phone-volume"></i>
-            <span>+46 23 0531</span>
-
-            <i class="far fa-map-marker-alt"></i>
-            <span>Industrigatan 201, 80356 Gävle</span>
-
-            <div class="footer__socials">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-linkedin"></i>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__contact">
+                    <p>Contact Info</p>
+        
+                    <div class="footer__contact-box">
+                        <i class="far fa-envelope"></i>
+                        <span>hello@contact.com</span>
+                    </div>
+        
+                    <div class="footer__contact-box">
+                        <i class="fas fa-phone-volume"></i>
+                        <span>+46 23 0531</span>
+                    </div>
+        
+                    <div class="footer__contact-box">
+                        <i class="far fa-map-marker-alt"></i>
+                        <span>Industrigatan 201, 80356 Gävle</span>
+                    </div>
+        
+                    <div class="footer__socials">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="footer__subscribe">
-            <p>Mailing List</p>
-            <p>Enter your email address  for our mailing list to keep yourself updated.</p>
-            <input type="email" name="email" placeholder="Email Adress...">
-            <input type="submit" value="Done">
-            <p>We respect your privacy</p>
+    
+            <div class="col-1-of-2">
+                <div class="footer__subscribe">
+                    <p>Mailing List</p>
+                    <p>Enter your email address  for our mailing list to keep yourself updated.</p>
+                    <input type="email" name="email" placeholder="Email Adress...">
+                    <input type="submit" value="Done">
+                    <p>We respect your privacy</p>
+                </div>
+            </div>   
         </div>
 
         <div class="footer__bar">
-            <p>&copy; Buildx 2019</p>
+            <div class="row">
+                <p>&copy; Buildx 2019</p>
 
-            <nav class="footer-menu">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
-            </nav>
+                <nav class="footer-menu">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
         </div>
     </footer>
     

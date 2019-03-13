@@ -1,0 +1,32 @@
+.btn{
+    text-decoration: none;
+    background: $color-yellow;
+    color: #fff;
+    padding: 2rem 4rem;
+    font-size: 1.6rem;
+}
+
+.btn--small{
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
+}
+
+.btn--white{
+    background: #fff;
+    color: $color-yellow;
+}
+
+.link{
+    color: rgba($color-grey, .7);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .3s ease;
+
+    &:hover{
+        border-bottom: 2px solid $color-yellow;
+        color: $color-yellow;
+    }
+}
+

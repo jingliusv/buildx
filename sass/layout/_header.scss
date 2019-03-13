@@ -1,0 +1,66 @@
+.header__contact{
+    background: $color-light-grey;
+    color: rgba($color-grey, .7);
+    padding: 1rem 0;
+    font-size: 1.4rem;
+
+    .box-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &--info{
+        display: flex;
+        align-items: center;
+    }
+
+    &--email, &--phone{
+        display: flex;
+        align-items: center;
+
+        i{
+            font-size: 1.5rem;
+            position: relative;
+            top: 1px;
+        }
+
+        p{
+            padding-left: 1rem;
+        }
+    }
+
+    &--phone{
+        margin-left: 2rem;
+    }
+
+}
+
+
+.header__nav{
+    padding: 2rem 0;
+
+    .box-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.6rem;
+
+        nav{
+            a{
+                text-decoration: none;
+                color: $color-dark;  
+                transition: all .3s ease-in; 
+            }
+
+            a:hover{
+                color: $color-yellow;
+            }
+        }
+
+        nav > *{
+            margin-left: 1.5rem;
+        }
+    }
+    
+}

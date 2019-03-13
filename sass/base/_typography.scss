@@ -1,0 +1,45 @@
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+    width: 50%;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 3.5rem;
+    color: $color-dark;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3{
+    font-size: 2rem;
+    color: $color-dark;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+}
+
+h4{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $color-dark;
+    margin-top: 2rem;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+p.sub-content{
+    width: 45%;
+    margin: 3rem auto 7rem auto;
+    color: rgba($color-grey, .7);
+    line-height: 1.5;
+}
+
+p.content{
+    color: rgba($color-grey, .7);
+    margin-bottom: 2rem;
+}

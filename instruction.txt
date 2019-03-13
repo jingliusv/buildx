@@ -1,0 +1,2 @@
+Start the template by opening terminal.
+Type in npm install for install node package in your project file to function.

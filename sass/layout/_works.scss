@@ -20,6 +20,11 @@
         width: 100%;
         background: $color-purple;
         position: relative;
+        border: 1px solid $color-light-grey;
+
+        @include respond(tab-land){
+            height: 50rem;
+        }
 
        &--content{
             position: absolute;

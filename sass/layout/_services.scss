@@ -5,6 +5,10 @@
         width: 100%;
         height: 22rem;
         background: $color-yellow;
+
+        @include respond(tab-port){
+            height: 30rem;
+        }
     }
 }
 
@@ -28,7 +32,11 @@
        .infoBox{
             display: flex;
             align-items: flex-start;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
+
+            @include respond(tab-land){
+                margin-bottom: 2rem;
+            }
 
             &:last-child{
                 margin-bottom: 0;
@@ -37,8 +45,16 @@
             &__icon{
                 margin-top: 3rem;
 
+                @include respond(tab-land){
+                    margin-top: 1rem;
+                }
+
                 img{
                     height: 6rem;
+
+                    @include respond(tab-land){
+                        height: 4rem;
+                    }
                 }              
             }
 
@@ -46,7 +62,15 @@
                 margin-left: 3rem;
 
                 p{
-                    width: 60%;
+                    width: 70%;
+
+                    @include respond(tab-land){
+                        width: 100%;
+                    }
+
+                    @include respond(phone){
+                        width: 100%;
+                    }
                 }
             }
        }

@@ -4,6 +4,14 @@
     padding: 1rem 0;
     font-size: 1.4rem;
 
+    @include respond(tab-land){
+        padding-left: 2rem;
+    }
+
+    @include respond(phone){
+        padding-left: 2rem;
+    }
+
     .box-container{
         display: flex;
         justify-content: space-between;
@@ -39,6 +47,14 @@
 
 .header__nav{
     padding: 2rem 0;
+
+    @include respond(tab-land){
+        padding-right: 2rem;
+    }
+
+    @include respond(phone){
+        padding-right: 2rem;
+    }
 
     .box-container{
         display: flex;

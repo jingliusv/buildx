@@ -3,6 +3,10 @@ h1{
     text-transform: uppercase;
     width: 50%;
     font-weight: 900;
+
+    @include respond(phone){
+        width: 70%;
+    }
 }
 
 h2{
@@ -42,4 +46,26 @@ p.sub-content{
 p.content{
     color: rgba($color-grey, .7);
     margin-bottom: 2rem;
+}
+
+.footer__contact, .footer__subscribe{
+    p{
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-bottom: 2rem;
+    }
+
+    .subtitle{
+        font-size: 1.4rem;
+    }
+}
+
+.footer__bar{
+    font-size: 1.3rem;
+
+    p{
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: rgba(#fff, .5);
+    }
 }

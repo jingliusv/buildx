@@ -3,7 +3,99 @@
     color: #fff;
     padding-top: 3rem;
 
-    .row{
-        display: flex;
+    @include respond(tab-port){
+        text-align: center;
+    }
+
+    &__contact-box{
+        padding: 2rem 0;
+        font-size: 1.3rem;
+        border-bottom: 1px solid rgba($color-grey, .4);
+
+        
+        i{
+            font-weight: 1.3rem;
+            padding-right: 1rem;
+        }
+    }
+
+    &__socials{
+        padding: 2rem 0;
+
+        i{
+            font-size: 2rem;
+
+            &:not(:first-child){
+                padding-left: 1rem;
+            }
+        }
+    }
+
+    &__subscribe{
+        text-align: right;
+
+        @include respond(tab-port){
+            text-align: center;
+        }
+
+        input{
+            padding: 1rem 1.5rem;
+        }
+
+        input[type="email"]{
+            width: 50%;
+            border: none;
+        }
+
+        input[type="submit"]{
+            background: $color-yellow;
+            border: none;
+            color: #fff;
+            text-transform: uppercase;
+            margin-left: -2px;
+        }
+
+        p:first-child{
+            margin-bottom: 3rem;
+        }
+
+        p:last-child{
+            padding: 2rem 0;
+            color: rgba($color-light-grey, .3);
+            font-size: 1.3rem;
+        }
+    }
+
+
+    &__bar{
+        padding: 1.5rem 0;
+        background: $color-footer;
+
+        @include respond(tab-port){
+            text-align: center;
+        }
+
+        nav{
+            text-align: right;
+
+            @include respond(tab-port){
+                text-align: center;
+            }
+
+            a{
+                text-decoration: none;
+                color: rgba(#fff, .5);
+                
+                transition: all .3s ease;
+
+                &:not(:first-child){
+                    padding-left: 2rem;
+                }
+
+                &:hover{
+                    color: $color-yellow;
+                }
+            }
+        }
     }
 }
